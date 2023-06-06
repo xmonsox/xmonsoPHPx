@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <form class="mx-auto" method="post" action="">
+        <h4 class="text-center">Login</h4>
+        <?php
+        include_once ("conexion.php");
+        include "../controlador/controlador_login.php";
+        ?>
+        <div class="mb-3 mt-5">
+            <label for="exampleInputEmail1" class="form-label">Usuario</label>
+            <input type="text" class="form-control" name="usuario" id="exampleInputEmail1" aria-describedby="emailHelp">
+            
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" name="password" id="exampleInputPassword1">
+            <div id="emailHelp" class="form-text">Olvidaste tu contraseña?</div>
+        </div>
+        
+        <input type="submit" name="btninicio" class="btn btn-success " value="Iniciar Sesion"></input>
+        <a href="http://localhost/Taller_php/login/Registrar_usuario.php" name="btnregistrar" class="btn btn-warning">No tienes cuenta? Registrate</a>
+
+    </form>
+        
+    </div>
+    <td><a href="Eliminar.php?id=<?=$row['id_admin'] ?>" class="btn btn-outline-danger btn-sm">Eliminar</a></td>
